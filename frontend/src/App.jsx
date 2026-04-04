@@ -12,7 +12,6 @@ import Resume from './Portfolio/Resume/index.jsx'
 import Skills from './Portfolio/Skills/index.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-
 function App() {
   return (
     <BrowserRouter>
