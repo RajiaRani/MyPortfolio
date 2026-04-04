@@ -1,0 +1,257 @@
+/* ── Hero ── */
+.home-root {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  padding: 52px 0 40px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 20px;
+  line-height: 1.15;
+}
+
+.hero-bio {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #3a3a3a;
+  margin: 0 0 14px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.hero-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a6e8e;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.01em;
+}
+.hero-link:hover {
+  border-bottom-color: #1a6e8e;
+  color: #0f4c61;
+}
+.hero-link-outline {
+  border: 1px solid #1a6e8e;
+  padding: 4px 14px;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.hero-link-outline:hover {
+  background: #1a6e8e;
+  color: #fff;
+  border-bottom-color: transparent;
+}
+
+/* Image — no background, natural photo style */
+.hero-image-wrap {
+  flex-shrink: 0;
+  width: 220px;
+}
+
+.hero-photo {
+  width: 220px;
+  height: 275px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 4px;
+  display: block;
+}
+
+/* ── Shared section styles ── */
+.section-divider {
+  border: none;
+  border-top: 1px solid #e4e4e0;
+  margin: 0;
+}
+
+.home-section {
+  padding: 36px 0;
+}
+
+.home-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.section-heading {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.section-link {
+  font-size: 0.88rem;
+  color: #1a6e8e;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.section-link:hover { color: #0f4c61; text-decoration: underline; }
+
+.section-desc {
+  font-size: 0.97rem;
+  color: #555;
+  margin: 0 0 18px;
+  line-height: 1.7;
+}
+
+/* ── Skills tags ── */
+.skill-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.skill-tag {
+  background: #e8f4f8;
+  color: #1a6e8e;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 4px 11px;
+  border-radius: 20px;
+  border: 1px solid #c5dfe8;
+}
+
+.skill-icons-row {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.skill-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.skill-icon-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.skill-icon-item span {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+/* ── Featured Projects grid ── */
+.fp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.fp-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.fp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+.fp-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+.fp-desc {
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0 0 12px;
+}
+.fp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+.fp-tag {
+  background: #f2f2f0;
+  color: #444;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+.fp-github {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #1a6e8e;
+}
+.fp-github:hover { text-decoration: underline; }
+
+/* ── Cert preview ── */
+.cert-preview-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cert-preview-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  flex: 1;
+  min-width: 220px;
+}
+.cert-preview-img {
+  width: 72px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.cert-preview-info {
+  display: flex;
+  flex-direction: column;
+}
+.cert-preview-info strong {
+  font-size: 0.88rem;
+  color: #2a2a2a;
+}
+.cert-preview-info span {
+  font-size: 0.78rem;
+  color: #888;
+}
+
+/* ── CTA ── */
+.home-cta { text-align: left; }
+
+@media(max-width: 900px){
+  .home-root { width: 92%; }
+  .hero-inner { flex-direction: column-reverse; gap: 24px; }
+  .hero-image-wrap { width: 100%; }
+  .hero-photo { width: 160px; height: 200px; }
+  .fp-grid { grid-template-columns: 1fr; }
+  .hero-name { font-size: 2rem; }
+}

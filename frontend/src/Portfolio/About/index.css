@@ -1,0 +1,160 @@
+/* =====================================================================
+      ABOUT SECTION
+ =========================================================================== */
+
+.skills-container{
+    width: 1250px;
+    margin: auto;
+}
+.about .about-heading {
+    width: 100%;
+}
+
+.about .about-img .img-box {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    width: 380px;
+    margin: auto;
+
+}
+
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-intro{
+    padding: 15px 31px 20px 0;    
+    text-align: start;
+}
+
+.about .about-heading h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+}
+
+.about .about-heading h3 span {
+    color: var(--h3-color);
+}
+
+.about .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+
+}
+
+.about-text h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.about .skills-container h2 {
+    color: var(--skin-color);
+    font-size: 30px;
+}
+
+.about-text .skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.about .skills h3 {
+    font-size: 25px;
+}
+
+.about-text .skill-item {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 5px 15px;
+    text-transform: capitalize;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+}
+
+.about-text {
+    width: 60%;
+    padding: 0 15px;
+}
+
+.about-nav {
+    margin-bottom: 23px;
+}
+
+.about-nav .nav-link {
+    width: 50%;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-nav .nav-link .nav-item {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.about-nav .nav-link .nav-item i {
+    color: var(--skin-color);
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+/* about lib, tech, lang */
+
+.about-tabs .tab-item {
+    padding: 2px 0px;
+    background-color: transparent;
+    text-transform: capitalize;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--text-black-900);
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.about-tabs .tab-item:last-child {
+    margin: 0;
+}
+
+.about-tabs .tab-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--skin-color);
+    transition: width 0.3s ease;
+}
+
+.about-tabs .tab-item:hover::before {
+    width: 100px;
+    cursor: pointer;
+}
+
+.about-tabs .tab-item.active {
+    color: var(--h3-color);
+    opacity: 1;
+    cursor: all;
+}
+
+.tab-content {
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease; /* Transition for opacity */
+    height: 0; /* Set initial height to 0 */
+    overflow: hidden; /* Hide overflow */
+}
+
+.tab-content.active {
+    opacity: 1; /* Show when active */
+    height: auto; /* Allow content to take its natural height */
+}

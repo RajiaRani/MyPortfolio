@@ -1,0 +1,94 @@
+.skills-page {
+  width: 55%;
+  margin: 0 auto;
+  padding: 40px 0 64px;
+}
+
+.skills-heading {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 32px;
+}
+
+/* ── Table ── */
+.skills-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-row {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  padding: 13px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.skill-row:last-child {
+  border-bottom: none;
+}
+
+/* Label */
+.skill-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  min-width: 200px;
+  width: 200px;
+  flex-shrink: 0;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/* Values */
+.skill-values {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+  flex: 1;
+  line-height: 1.9;
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #3a3a3a;
+  white-space: nowrap;
+}
+
+.skill-sep {
+  color: #aaa;
+  margin-right: 7px;
+}
+
+/* Tiny logo — grayscale, subtle */
+.skill-logo {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+  opacity: 0.6;
+  filter: grayscale(30%);
+  flex-shrink: 0;
+  position: relative;
+  top: 1px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .skills-page { width: 92%; }
+
+  .skill-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .skill-label {
+    width: auto;
+    min-width: auto;
+  }
+}

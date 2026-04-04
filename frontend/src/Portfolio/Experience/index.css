@@ -1,0 +1,119 @@
+.exp-page {
+  width: 55%;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+}
+
+.exp-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+}
+
+.exp-sub {
+  font-size: 1rem;
+  color: #5a5a5a;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+/* Timeline list */
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each card */
+.exp-item {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 26px 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-left: 4px solid #1a6e8e;
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+.exp-item:hover {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.11);
+  transform: translateY(-2px);
+}
+
+/* Header row */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.exp-left {
+  flex: 1;
+}
+
+.exp-role {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+
+.exp-org {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a6e8e;
+}
+
+.exp-dot {
+  color: #aaa;
+  font-weight: 400;
+  margin: 0 4px;
+}
+
+.exp-period {
+  font-size: 0.82rem;
+  color: #888;
+  white-space: nowrap;
+  padding-top: 3px;
+  font-weight: 500;
+}
+
+/* Bullet points */
+.exp-bullets {
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.exp-bullets li {
+  list-style: disc;
+  font-size: 0.92rem;
+  color: #3a3a3a;
+  line-height: 1.7;
+}
+
+.exp-bullets li strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .exp-page {
+    width: 92%;
+  }
+  .exp-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .exp-period {
+    padding-top: 0;
+  }
+}

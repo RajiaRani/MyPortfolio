@@ -1,0 +1,331 @@
+/* Projects page */
+.projects-page {
+  width: 55%;
+  margin: 0 auto;
+  padding: 36px 0 56px;
+}
+
+.projects-header {
+  margin-bottom: 32px;
+}
+
+.projects-main-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+}
+
+.projects-subtitle {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+/* Card */
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Image */
+.project-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+  padding: 0 12px;
+}
+
+/* Hover overlay on image */
+.project-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 110, 142, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-card:hover .project-img-overlay {
+  opacity: 1;
+}
+
+.project-img-overlay span {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Card body */
+.project-card-body {
+  padding: 18px 18px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-cat-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.project-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.project-desc {
+  font-size: 0.86rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0 0 12px;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.project-tag {
+  background: #f0f4f8;
+  color: #3a3a3a;
+  font-size: 0.74rem;
+  padding: 2px 9px;
+  border-radius: 12px;
+}
+
+.project-tag-more {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-footer small {
+  font-size: 0.78rem;
+  color: #aaa;
+}
+
+.project-gh-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1a6e8e;
+}
+.project-gh-link:hover { text-decoration: underline; }
+
+/* ── Modal ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeInOverlay 0.2s ease;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  animation: slideUpModal 0.25s ease;
+}
+
+@keyframes slideUpModal {
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.modal-close:hover { background: #f0f0f0; }
+
+.modal-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-category-badge {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(0,0,0,0.45);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.modal-body {
+  padding: 24px 28px 28px;
+}
+
+.modal-cat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #999;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.modal-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.modal-desc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.75;
+  margin: 0 0 16px;
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.modal-tag {
+  background: #f0f4f8;
+  color: #333;
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 14px;
+}
+
+.modal-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.modal-btn {
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modal-btn-primary {
+  background: #1a6e8e;
+  color: #fff;
+}
+.modal-btn-primary:hover { background: #14566e; color: #fff; }
+
+.modal-btn-outline {
+  border: 1.5px solid #1a6e8e;
+  color: #1a6e8e;
+}
+.modal-btn-outline:hover { background: #e8f4f8; }
+
+.modal-date {
+  font-size: 0.8rem;
+  color: #aaa;
+  display: block;
+}
+
+@media(max-width: 900px){
+  .projects-page { width: 92%; }
+  .projects-grid { grid-template-columns: 1fr; }
+}
