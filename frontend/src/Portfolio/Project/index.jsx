@@ -35,7 +35,7 @@ const projects = [
     category: "Agentic AI",
     desc: "10-node LangGraph agent workflow for automated incident triage, orchestrating evidence collection across service health, deployments, feature flags, and dependency health through 5 deterministic MCP-style tool contracts. Includes FastAPI backend with ChromaDB vector retrieval over runbooks.",
     tech: ["LangGraph", "FastAPI", "ChromaDB", "RAG", "OpenTelemetry", "MCP"],
-    github: "hhttps://github.com/RajiaRani/Pulseguard-Aiops",
+    github: "https://github.com/RajiaRani/Pulseguard-Aiops",
     demo: "",
     date: "2025",
     accent: "#5c4b8a",

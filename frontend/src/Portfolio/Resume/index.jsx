@@ -8,7 +8,7 @@ export default function Resume(){
 
       {/* Display Resume inside an iframe */}
       <iframe
-        src="/RAJIA RANI.pdf"
+        src="/rajiarani.pdf"
         width="100%"
         height="800px"
         title="Resume"

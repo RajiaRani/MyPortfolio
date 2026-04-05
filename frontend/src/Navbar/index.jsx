@@ -22,7 +22,7 @@ export default function Navbar() {
       <header>
         <div className="navbar">
           <div className="left-side">
-            <p><Link to="/">Rajia Rani</Link></p>
+            <p><Link to="/portfolio">Rajia Rani</Link></p>
           </div>
           <div className={`middle-side ${isMenuOpen ? "active" : ""}`}>
             <ul className="nav-menu">
