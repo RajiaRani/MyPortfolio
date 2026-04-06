@@ -66,8 +66,7 @@ export default function Index() {
             <p className="hero-bio">
               Rajia Rani is an MS in Artificial Intelligence candidate and Research Assistant at the
               <strong> University of South Dakota</strong>, specialising in LLM pre-training, distributed
-              systems, and GPU performance optimisation. With 2.5+ years of hands-on experience,
-              she has built and optimised AI systems across startup and academic environments.
+              systems, and GPU performance optimisation. 
             </p>
             <p className="hero-bio">
               She is the Co-Founder of <strong>Majorana AI Labs</strong>, where she led AI-driven
