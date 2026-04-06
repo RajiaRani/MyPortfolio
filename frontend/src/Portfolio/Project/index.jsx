@@ -18,7 +18,7 @@ const projects = [
   {
     img: null,
     imgFit: "contain",
-    title: "Scalable LLM Training — 5D Parallelism",
+    title: "Scalable LLM Training - 5D Parallelism",
     category: "AI / Distributed Systems",
     desc: "Distributed GPT-2 training framework across 8× H100/A100 GPUs implementing all 5 parallelism strategies (DP, TP, PP, CP, EP) from scratch using PyTorch Distributed and NCCL. Achieved ~1.5M tok/sec on DP=8 baseline. Includes LoRA fine-tuning, Ring Attention, and MoE with top-k routing.",
     tech: ["PyTorch", "NCCL", "CUDA", "Megatron", "LoRA", "MoE"],
